@@ -1,5 +1,6 @@
-// lib/logger.ts
 type LogLevel = "info" | "warn" | "error" | "debug";
+
+const appName = "Proyecto Base";
 
 interface LogContext {
   [key: string]: any;
@@ -11,6 +12,7 @@ function createLogger(source: string) {
       timestamp: new Date().toISOString(),
       level,
       source,
+      appName,
       message,
       ...context,
     });

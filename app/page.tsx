@@ -13,7 +13,7 @@ export default async function Home() {
     <main className="flex flex-col items-center justify-center h-screen">
       <div className="flex flex-col gap-4">
         <h1 className="text-2xl font-bold underline">
-          Bienvenido a la aplicación
+          Bienvenido a la aplicación Base de nextjs
         </h1>
         {session?.user.name ? (
           <>

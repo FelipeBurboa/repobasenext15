@@ -2,6 +2,7 @@
 
 import { auth } from "@/lib/auth";
 import { redirect } from "next/navigation";
+
 export async function login(email: string, password: string) {
   await auth.api.signInEmail({
     body: {

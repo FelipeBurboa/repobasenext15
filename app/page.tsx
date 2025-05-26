@@ -12,7 +12,7 @@ export default async function Home() {
   return (
     <main className="flex flex-col items-center justify-center h-screen">
       <div className="flex flex-col gap-4">
-        <h1>Bienvenido a la aplicación</h1>
+        <h1 className="text-2xl font-bold">Bienvenido a la aplicación</h1>
         {session?.user.name ? (
           <>
             <p>Bienvenido {session.user.name}</p>
